@@ -102,7 +102,7 @@ endif (USE_OPEN_MP)
 
 # eigen  3
 find_package (Eigen3 REQUIRED)
-include_directories(${EIGEN3_INCLUDE_DIRS})
+include_directories(${Eigen3_INCLUDE_DIRS})
 
 # optionally, opencl
 # OpenCL disabled as its code is not up-to-date with API

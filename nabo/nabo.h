@@ -32,12 +32,12 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #ifndef __NABO_H
 #define __NABO_H
 
-#include <eigen3/Eigen/Core>
+#include <Eigen/Core>
 #if EIGEN_VERSION_AT_LEAST(2,92,0)
 	#define EIGEN3_API
 #endif
 #ifndef EIGEN3_API
-	#include <eigen3/Eigen/Array>
+	#include <Eigen/Array>
 #endif
 #include <vector>
 #include <map>
