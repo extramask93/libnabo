@@ -101,7 +101,7 @@ if (USE_OPEN_MP)
 endif (USE_OPEN_MP)
 
 # eigen  3
-find_package (Eigen3 REQUIRED NO_MODULE)
+find_package (Eigen3 REQUIRED)
 include_directories(${EIGEN3_INCLUDE_DIRS})
 
 # optionally, opencl
