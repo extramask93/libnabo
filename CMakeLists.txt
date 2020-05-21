@@ -8,7 +8,7 @@ set(LIB_NAME nabo)
 project("lib${LIB_NAME}")
 
 # Extract version from header
-set(CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR})
+list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}")
 execute_process(
 	COMMAND grep "NABO_VERSION " nabo/nabo.h
 	WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
